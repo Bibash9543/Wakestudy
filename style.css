@@ -397,3 +397,359 @@ flex-basis: 50%;
 margin-bottom: 30px;
 }
 }
+
+
+
+
+
+
+
+
+
+@import 'utilities.css';
+:root{
+   --primary:rgb(228, 242, 228);
+   --secondary:rgb(131, 173, 118);
+   --ternary:rgb(181, 206, 181);
+   --light:rgb(255, 255, 255);
+   --dark:rgb(17, 7, 7);
+   --dark2:#f2f7f3;
+   --dark3:rgb(238, 237, 237);
+   --button:#00cc99;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    height: 5000px;
+}
+.keypad{
+    height: 1.2rem;
+    
+}
+.contact-text-center{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 7rem;
+    background-color: var(--dark3);
+    padding: .6rem;
+    
+}
+span{
+    
+    margin-left: .5rem;
+    margin-top: 3rem;
+}
+.navbar{
+    background-color: var(--light);
+    padding:2rem 0;
+}
+.navi{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    
+}
+.navi .left img{
+    height: 60px;
+    margin-left: 2rem;
+}
+.navi .right{
+    text-align: center;
+}
+.navi .middle a{
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 1.1rem;
+    padding:6px;
+    transition: all .2s ease;
+
+    
+}
+.navi .middle{
+    word-spacing: 2.5rem;
+    width: 640px;
+    
+}
+.navi .middle a:hover{
+    color: var(--light);
+    background-color: var(--dark3);
+    border-radius: .5rem;
+    
+}
+.navi .btn button{
+    padding: .5rem;
+    background-color: var(--primary);
+    border: none;
+    border-radius: .5rem;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.belownav{
+    background-image: url('image/hero_bg1.jpg');
+    height: 600px;
+    
+}
+.belownav .imgtext{
+    padding-top: 11rem;
+    padding-left: 4rem;
+}
+.belownav .imgtext .headingtext{
+    font-size: 4rem;
+}
+.belownav .imgtext .para{
+    padding:1rem 0;
+    font-size: 1.2rem;
+}
+
+.secondbtn .first,.second{
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all .2s ease;
+
+}
+.secondbtn .first{
+    color: var(--light);
+    background-color: var(--button);
+    
+}
+.secondbtn .second{
+    color: var(--dark);
+    background-color: var(--light);
+    margin-left: 1rem;
+
+
+}
+.secondbtn .first:hover{
+    background-color: var(--light);
+    color: var(--button);
+}
+.secondbtn .second:hover{
+    color: var(--light);
+    background-color: skyblue;
+    
+}
+
+.logotext{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.secondpagetext h1{
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+
+}
+
+.secondpagetext{
+    text-align: center;
+}
+.typesofvisas .visalist{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-row-gap: 3rem;
+    grid-column-gap: 1.5rem;
+    margin-top: 5rem;
+    
+}
+.typesofvisas .visalist .sameclassvisa{
+    border: 1px solid white;
+    border-radius: .8rem;
+    padding-left: 3rem;
+    padding-top: 1.5rem;
+    background-color: var(--light);
+    margin: 0 3rem;
+    word-spacing: 3px;
+    transition: all .2s ease;
+    margin-bottom: 4rem;
+
+}
+.secondpage{
+    margin-top: 3rem;
+    background-color: rgba(249, 249, 249, 0.968);
+    
+}
+.typesofvisas .visalist .sameclassvisa img{
+    height: 40px;
+}
+.typesofvisas .visalist .sameclassvisa h1{
+    padding: 1rem 0;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+.typesofvisas .visalist .sameclassvisa p{
+    padding: 1rem 0;
+    color: rgb(85, 78, 78);
+    text-align: left;
+}
+
+.typesofvisas .visalist .sameclassvisa:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 5rem;
+    grid-gap: 3rem;
+    margin-left: 3rem;
+
+}
+.footer-content .left h1{
+    font-weight: 450;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+
+}
+.footer-content .left .contact{
+    margin-bottom: 2rem;
+    
+}
+.footer-content .left img{
+    height: 50px;
+}
+.footer-content .left p{
+    font-weight: 500;
+}
+
+
+.footer-content .similar h1{
+    font-weight: 450;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+.footer-content .similar li{
+    list-style-type: none;
+    padding-top: 1.2rem;
+    color: rgb(88, 82, 82);
+}
+.footer-content .similar li:hover{
+    cursor: pointer;
+    color: var(--dark) ;
+}
+.container hr{
+    margin-top: .5rem;
+    color: var(--dark2);
+}
+.container .footer-para{
+    text-align: center;
+    margin-top: .5rem;
+}
+
+.contact-form{
+    margin-left: 3rem;
+    text-align: center;
+    
+}
+
+.contact-form .head{
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    
+}
+.contact-form form .firstrow,.secondrow{
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 3rem;
+    margin-bottom: 3rem;
+    
+
+}
+.contact-form .title{
+    padding-top: 3rem;
+}
+
+.contact-form form .mail,.contact{
+    margin-left: 0px;
+}
+
+.contact-form form textarea{
+    
+    width: 65%;
+    height: 7rem;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    background-image: url("image/chat_20dp_FILL0_wght400_GRAD0_opsz20.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+.contact-form form input,select,textarea{
+    width: 100%;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    
+}
+::placeholder{
+    color: rgb(209, 221, 221);
+}
+
+.contact-form form input[id=username]{
+    background-image: url("image/person2.png");
+    
+}
+.contact-form form input[id=email]{
+    background-image: url("image/mail.png");
+}
+.contact-form form input[id=phone]{
+    background-image: url("image/phone.png");
+}
+.contact-form form select[id=visatype]{
+    background-image: url("image/visaa.png");
+
+
+}
+.contact-form form select{
+    color: #616b68;
+}
+.contact-form form select:hover{
+    cursor: pointer;
+}
+.contact-form form select option{
+    font-size: 1rem;
+    
+}
+.contact-form form .submit{
+    margin-top: 2.5rem;
+
+
+}
+.contact-form form .submit button{
+    font-size: 1.3rem;
+    padding: 1rem 3.5rem;
+    background-color: var(--button);
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    color: var(--light);
+    transition: all .2s ease;
+}
+.contact-form form .submit button:hover{
+    background-color: skyblue;
+    color: var(--light);
+    cursor: pointer;
+}
+
+
